@@ -1,0 +1,199 @@
+/***************************************************
+Theme Name:     responsive-Child
+Description:    Child theme for the Responsive Theme
+Author:         Taylor Thompson (tayl0rt)
+Template:       responsive
+Version:        1.0 Alpha (Jul 26th, 2013)                             
+***************************************************/
+
+
+/*** Import Parent CSS ***/
+
+@import url("../responsive/style.css");
+
+/**************** 
+
+Custom CSS Below!
+
+****************/
+
+body {
+    color:       #FFF;
+    font-family: sans-serif;
+    background: #000;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a,
+h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: 100;
+}
+
+p {
+    font-weight: 200;
+    font-size: 1.1em;
+}
+
+#header {
+    background: #000;
+    background-image: -webkit-linear-gradient(top, #000000, #535353);
+}
+
+#footer {
+    color: #FFF;
+}
+
+#footer a {
+    color: #FFF;
+}
+
+#footer a:hover {
+    color: #FFF;
+}
+
+#footer-wrapper {
+    color: #FFF;
+}
+
+a {
+    color: #FFF;
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: underline !Important;
+}
+
+#logo {
+    float:  none;
+    margin: 0 40% 0 40%;
+}
+
+/********************* 
+    Body & Widgets
+*********************/
+
+/**** Main Body Container ****/
+#container {
+    margin:    1px 1px 1px 10px;
+    max-width: 100%;
+    padding:   0px 20px 0 20px;
+    float: right !Important;
+    position: relative;
+
+}
+
+/**** Main Body Wrapper ****/
+#wrapper {
+    background-color: #000000;
+    border:   1px solid #FFF;
+    margin:   0px 0px 10px 150px;
+    padding:  0 10px 0 10px;
+    position: relative;
+    float: right !Important;
+    -webkit-border-radius: 2px;
+    -moz-border-radius:  2px;
+    border-radius:     2px;
+}
+
+/**** Widget Wrapper ****/
+.widget-wrapper {
+    color: #FFF;
+    background-color: #000000;
+    border: 1px solid #00F;
+    margin: 0 0 0 50px;
+    float: right;
+    position: fixed;
+}
+
+::selection {
+    background: #FFFFFF;
+    color:      #000000;
+}
+
+/********************************** 
+Below is Navigation Bar Custom CSS 
+**********************************/
+
+.main-nav {
+    border: 2px solid red;
+    height: 250px
+    width: 100%;
+    float: left !Important;
+    position: relative;
+}
+
+ul.menu {
+    border: 2px solid green;
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    float: left;
+    width: 300px !Important;
+    /*list-style: none !Important;*/
+    margin:  0 !Important;
+    padding: 0 !Important;
+    list-style: none !Important;
+    position: fixed; 
+}
+
+
+ul.menu,
+li:hover {
+    background-color: #000000 !Important;
+    color: #ffffff !Important;
+}
+
+.menu a {                  
+    width: 122px;
+    /*display: block !Important;*/
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #000 !Important;
+    background-image: -webkit-linear-gradient(top, #DDDDDD, #DDDDDD) !Important;
+    color: #000;
+}
+
+
+.menu .current_page_item a, 
+.menu .current-menu-item a {
+    background-color: #000000;
+}
+
+/**** Hides top-right header navigation bar ****/
+.top-menu {
+    display: none;
+}
+
+/******************* 
+END Navigation CSS 
+*******************/
+
+
+/**** 
+Used all CSS from .post-meta found in Dev Tools, 
+only way to make the color #0000 Work, weird.
+****/
+.post-meta {
+    clear: both;
+    color: #FFF;
+    font-size:     .85em;
+    margin-bottom: .625em;
+}
+
+.post-data a {
+color: #FFFFFF;
+}
+
+.ngg-slideshow {
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px !Important;
+    width: 100% !Important;
+}
+
+div#ngg-slideshow-1-2-1.ngg-slideshow {
+height: 600px !Important;
+width: 100% !Important;
+}
