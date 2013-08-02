@@ -1,0 +1,103 @@
+#pone {
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 50% 0 50% 0;
+}
+
+#spinner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    margin: auto;
+    height: 500px;
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+    text-align: center;
+    border: 3px solid black;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
+    background-color: #f33;
+    -webkit-animation-name: spinneroneRotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-funtion: linear;
+}
+
+@-webkit-keyframes spinneroneRotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#ptwo {
+    font-family: Helvetica;
+    font-size: 28px;
+    margin: 50% 0 50% 0;
+}
+
+#spinner-two {
+    height: 250px;
+    width: 250px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    border: 3px solid black;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
+    background-color: #3f3;
+    -webkit-animation-name: spinnertwoRotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-funtion: linear;
+}
+
+@-webkit-keyframes spinnertwoRotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+#pthree {
+    font-family: Helvetica;
+    font-size: 28px;
+    margin: 50% 0 50% 0;
+}
+
+#spinner-three {
+    float: right;
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    border: 3px solid black;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
+    background-color: #33f;
+    -webkit-animation-name: spinnerthreeRotate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-funtion: linear;
+}
+
+@-webkit-keyframes spinnerthreeRotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-720deg);
+    }
+}
+
+body {
+    background-color: rgb(165, 113, 113);
+}

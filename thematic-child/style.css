@@ -1,0 +1,186 @@
+/***************************************************
+****************************************************
+
+Theme Name:     thematic-Child
+Description:    Child theme for the Thematic theme
+Author:         Taylor Thompson (tayl0rt)
+Template:       thematic
+Version:        1.0 Alpha (Jul 26th, 2013)          
+
+****************************************************                   
+***************************************************/
+
+
+/**** Import Parent CSS ****/
+
+@import url("../thematic/style.css");
+
+/**************** 
+*****************
+Custom CSS Below!
+*****************
+****************/
+
+/*******************
+General stuff below
+*******************/
+
+body {
+    font-family: sans-serif, Helvetica;
+    color: #000;
+}
+
+a:link {
+    color: #F09;
+    text-decoration: none;      /**** Link Coloring CSS ****/
+}
+
+body a:hover {
+    color: #F09;
+    text-decoration: underline; /**** Link Coloring CSS ****/
+}
+
+.entry-title {
+	display: none; /* ----> Hides Entry Title */
+    font-family: sans-serif, Helvetica;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 0 0 7px 0;
+}
+
+
+/****************
+Header CSS Below
+****************/
+
+#blog-title a {
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 300;
+	color: #FFCC00;
+	font-size: 2em;
+	line-height: 1;
+}
+
+#blog-title a:hover {
+    color: #FFCC00;
+    text-decoration: underline; 
+}
+
+#header {
+	background-color: #000;
+}
+
+#blog-description {
+    color: #FFCC00;
+    font-size: 16px;   
+    font-style: italic;
+    margin-left: 245px;
+}
+
+#access {
+	border-bottom: 1px solid #ccc;
+	height: 38px;
+	font-size: 13px;
+	overflow: visible;
+	z-index: 100;
+}
+
+.menu {
+	background-color: #000;
+}
+
+.sf-menu{
+	float: none;
+}
+
+.sf-menu li {
+   	background-color: #FFCC00;
+	width: 180px;
+	height: 36px;
+	font-size: 1.2em;
+	font-weight: 600;
+	text-align: center;
+}
+
+.sf-menu a {
+	border: 2px solid #000;         /******************************/
+    color: #000;                    /* Sets the Navigation Border */
+    font-family: sans-serif;        /******************************/
+}
+
+.sf-menu a:hover,
+.sf-menu a:visited {
+	background-color: #FFCC00;
+	color: #000;
+	margin: 0px;
+	-webkit-transition: margin 0.5s ease-out;   /****      May or may not keep this,         ****/
+	-moz-transition: margin 0.5s ease-out;		/**** webkit lifts item up with mouse hover, ****/
+	-o-transition: margin 0.5s ease-out; 	    /****       FIGURE THIS OUT SOON             ****/
+} 
+
+.sf-menu a:hover {
+	margin-top: 5px;
+}
+
+
+#menu-solventbar{
+	background-color: #FFCC00;
+}
+
+/************************************************************/
+/**** Below CSS is conflicting with menu bar navigation! ****/
+/************************************************************/
+
+
+.sf-menu .current-menu-item a, 
+.sf-menu .current-menu-parent a,    /***************************************************/
+.sf-menu .current-menu-ancestor a,  /**** Makes the bottom of the menu border white ****/ 
+.sf-menu .current-post-ancestor a,  /****       and creates the open tab look       ****/
+.sf-menu .current_page_item a,      /***************************************************/
+.sf-menu .current_page_ancestor a, 
+.sf-menu .current_page_parent a {
+	border-bottom-color: #000;
+}
+
+/************** 
+Wrapper & Body 
+**************/
+
+#wrapper {
+	background-color: #E6E6E6;
+}
+
+#container {
+	background-color: #FFF;
+	width: 960px !Important;
+}
+
+#main {
+	width: 960px;
+}
+
+
+/***************
+Footer CSS Below
+****************/
+
+#footer {
+	background-color: #000; !Important;
+}
+
+.aside h3 {
+	color: #FFCC00;    /****************************************/
+	font-size: 18px;   /**** Text above G+ Widget "Add Us!" ****/
+	font-style: none;  /****************************************/
+	line-height: 22px;
+}
+
+#siteinfo {
+    color: #FFCC00;
+    font-size: 19px;
+    line-height: 17px;        /**** Copyright centering ****/
+    padding: 22px 0 44px 0;
+    text-align: center;
+}

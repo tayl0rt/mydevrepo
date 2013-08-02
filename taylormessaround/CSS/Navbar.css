@@ -1,0 +1,52 @@
+.navbar-master {
+    float: left;
+}
+
+.navbar {
+    margin: auto;
+    padding: 0;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.navbar li a {
+    display: block;
+    padding: 0 1px;
+    margin: 0 1px 0 0;
+    -webkit-transition: 0.15s linear;
+    -webkit-transition-property: -webkit-transform skew;
+   
+}
+
+.navbar li a img {
+    width: 48px;
+}
+
+.navbar li:hover {
+    margin: 3px  ;
+}
+.navbar li:hover a {
+    -webkit-transform: skew(8deg, 1deg);
+}
+
+
+
+.navbar li span {
+    background: rgba(0, 0, 0, 0.75);
+    position: relative;
+    margin: 0 0 0 15px ;
+    display:none;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 4px;
+    -webkit-border-radius: 6px;
+    color: #fff;
+}
+
+.navbar li:hover span {
+    display: inline;
+}

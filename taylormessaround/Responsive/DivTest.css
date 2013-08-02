@@ -1,0 +1,9 @@
+
+#blue-square {
+    height: 600px;
+    width: 100%;
+    max-width: 960px;
+    min-width: 275px;
+    font-family: sans-serif;
+    text-align: center;
+}
